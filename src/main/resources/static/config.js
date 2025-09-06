@@ -3,7 +3,8 @@ const getBackendUrl = () => {
     if (hostname === 'localhost' || hostname === '127.0.0.1') {
         return 'http://localhost:8080';
     } else {
-        return 'https://prisoners-dilemma-worker.rohitdhiman.workers.dev';
+        // TODO: Replace this with the URL of your deployed backend
+        return 'https://your-backend-service.com';
     }
 };
 

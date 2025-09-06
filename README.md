@@ -50,6 +50,24 @@ The rules of the game are as follows:
 
     The game will start automatically. Click "Cooperate" or "Defect" to make your move.
 
+## Deployment
+
+This application is designed to be deployed using Docker.
+
+1.  **Build the Docker Image:**
+    ```bash
+    docker build -t prisoners-dilemma .
+    ```
+
+2.  **Run the Docker Container:**
+    ```bash
+    docker run -p 8080:8080 prisoners-dilemma
+    ```
+
+This will start the application on `http://localhost:8080`. You can then deploy this container to your preferred cloud provider.
+
+The frontend can be deployed separately as a static site (e.g., on Cloudflare Pages). See `README-CLOUDFLARE.md` for more details.
+
 ## API Endpoints
 
 The following REST API endpoints are available:
