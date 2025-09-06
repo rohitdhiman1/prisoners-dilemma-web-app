@@ -27,7 +27,7 @@ To run this application locally, you will need to have Java and Maven installed.
 The application will be running in development mode, and you can start playing the game immediately.
 
 
-This project is a single-page web application that allows a user to play the Prisoner's Dilemma game against a computer opponent. The backend is built with Java and Spring Boot, and the frontend is a simple React application. Game state is persisted using Redis.
+This project is a single-page web application that allows a user to play the Prisoner's Dilemma game against a computer opponent. The backend is built with Java and Spring Boot, and the frontend is a simple React application.
 
 ## Game Logic
 
@@ -42,28 +42,6 @@ The rules of the game are as follows:
 - **Winning:** The first player to reach 20 points wins.
 - **Turns:** The game has a maximum of 10 turns. If no one reaches 20 points by the end of the 10th turn, the player with the higher score wins.
 
-## Prerequisites
-
-Before you begin, ensure you have the following installed:
-
-- **Java 17**
-- **Maven**
-- **Docker** (or a local Redis installation)
-
-## How to Run
-
-1.  **Start Redis:**
-    If you are using Docker, you can start a Redis container with the following command:
-    ```bash
-    docker run -d -p 6379:6379 redis
-    ```
-    This will run a Redis instance on `localhost:6379`.
-
-2.  **Run the Backend:**
-    You can run the Spring Boot application using Maven:
-    ```bash
-    mvn spring-boot:run
-    ```
     The backend server will start on `http://localhost:8080`.
 
 3.  **Play the Game:**

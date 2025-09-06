@@ -34,7 +34,7 @@ const App = () => {
     const startGame = async () => {
         setLoading(true);
         setResultMessage('');
-        const response = await fetch('/api/game/start', { method: 'POST' });
+        const response = await fetch(`${window.config.backendUrl}/api/game/start`, { method: 'POST' });
         const data = await response.json();
         setGame(data);
         setLoading(false);
@@ -42,7 +42,7 @@ const App = () => {
 
     const playMove = async (move) => {
         setLoading(true);
-        const response = await fetch(`/api/game/${game.id}/play`, {
+        const response = await fetch(`${window.config.backendUrl}/api/game/${game.id}/play`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ move })
