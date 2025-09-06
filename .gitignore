@@ -63,3 +63,8 @@
 /drush
 /drupal.phar
 /drupal
+
+
+target/
+/.idea
+/.vscode
